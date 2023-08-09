@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-rdvt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-qoqq-tenant/mc-quality-dashboard/backend-quality-dashboard-rdvt@sha256:e7d300ccc8d86e1086e6de96a2cc36e2d576ea0825299b2c12e35d94dc8efbc1
+        name: container-image
+        resources: {}
+status: {}
